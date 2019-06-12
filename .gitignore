@@ -1,0 +1,18 @@
+# npm
+node_modules
+npm-debug.log
+package-lock.json
+
+# coverage
+coverage
+coverage.json
+coverageEnv
+scTopics
+allFiredEvents
+
+# truffle
+build/
+.node-xmlhttprequest-*
+
+# mac
+.DS_Store/
