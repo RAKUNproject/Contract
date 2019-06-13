@@ -1,51 +1,48 @@
 
 # Rakun Public Contract
 
-## コントラクト
+## Contract
 
 - *RakunCoin*   
-ERC20トークン
+ERC20Token
 
 
-## セットアップ(Local環境)
+## SetUp (Local Environment)
 
-※ Node.jsが必要です。
+※ Node.js is necessary
 
-#### EthereumClientをインストール
-下記EthereumClientアプリケーションのganacheをインストールする
+#### Install the EthereumClient
+Install and Launch the Ethereum Client Application “Ganche”
 
 https://truffleframework.com/ganache
 
-install後、ganacheを起動する
-
-#### コントラクトのデプロイ(ganache)
-※ EthereumClient環境の起動が必要です。
+#### Contract Deployment (via ganche)
+※ Booting an Ethereum Client Environment is required
 
 ```
-cd RAKUN_BC_PUBLIC_CONTRACT
 npm install
 ./node_modules/.bin/truffle migrate
 ```
 
-#### テスト
-※ EthereumClient環境の起動が必要です。
+#### Test
+※ Booting an Ethereum Client Environment is required
 
 ```
 npm run test
 ```
 
-#### カバレッジ
-※ EthereumClient環境の起動が必要です。
+#### Coverage
+※ Booting an Ethereum Client Environment is required
 
 ```
 npm run coverage
 ```
 
 
-## デプロイ(Mainnet環境)
+## Deploy (Mainnet Environment)
 
-#### 接続環境の変更
-EthereumのMainnet接続先を準備し、`truffle.js`の`host`と`port`を変更
+#### Changing Environments
+Prepare the Ethereum Mainnet access point and change the ‘host’ and ‘port’ of ‘truffle.js’’
 ```
 mainnet: {
   host: "127.0.0.1",
@@ -55,7 +52,7 @@ mainnet: {
 }
 ```
 
-#### コントラクトのデプロイ(Mainnet)
+#### Contract Deployment (Mainnet)
 ```
 ./node_modules/.bin/truffle migrate --network mainnet
 ```
